@@ -22,4 +22,8 @@ class HelloTest(unittest.TestCase):
         self.assertTrue(type(result) is str)
         self.assertIsInstance(result, str)
         self.assertEqual("Hello", result)
+    def test_raise_error(self):
+        hello = Hello()
+        with self.assertRaises(RuntimeError):
+            hello.raise_error()
 

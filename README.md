@@ -60,5 +60,12 @@ self.assertIsInstance(result, str)
 
 `assertIsInstance ( realValue, expectedValue)` になり、通常のテストコードの`assert(ExpectedValue, real)` と逆になるので注意が必要。
 
+## 例外の検出
 
+例外が起きることをテストする
+
+```python
+with self.assertRaises(RuntimeError):
+   target.myfunc()
+```
 

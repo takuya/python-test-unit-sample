@@ -6,3 +6,6 @@ class Hello :
     def hello(self)->str:
         return "Hello"
 
+    def raise_error(self):
+        raise RuntimeError
+
